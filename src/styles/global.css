@@ -22,8 +22,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .grain { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.15'/%3E%3C/svg%3E"); }
 .window-shadow { filter: drop-shadow(0 18px 28px rgb(0 0 0 / .16)); }
 .technical-grid { background-image: linear-gradient(rgb(255 255 255 / .055) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255 / .055) 1px, transparent 1px); background-size: 32px 32px; }
+.technical-paper-grid { background-image: linear-gradient(rgb(33 31 29 / .045) 1px, transparent 1px), linear-gradient(90deg, rgb(33 31 29 / .045) 1px, transparent 1px); background-size: 28px 28px; }
 .workshop-rule { background-image: repeating-linear-gradient(135deg, #914621 0 9px, #211f1d 9px 18px); }
 .range-control { width: 100%; accent-color: var(--color-moss); cursor: pointer; }
+.quote-field { border-radius: 2px; outline: none; transition: border-color .18s, box-shadow .18s; }
+.quote-field:focus { border-color: var(--color-moss); box-shadow: 0 0 0 3px rgb(8 97 59 / .12); }
+.range-control:focus-visible { outline: 3px solid rgb(8 97 59 / .25); outline-offset: 4px; }
 img { display: block; }
 summary::-webkit-details-marker { display: none; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }

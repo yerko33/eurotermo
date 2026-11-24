@@ -51,14 +51,14 @@ import { business } from '../config';
       </div>
     </section>
 
-    <section id="configurador" class="scroll-mt-6 border-t-[6px] border-orange bg-[#292f2b] py-20 text-white md:py-24">
+    <section id="configurador" class="scroll-mt-10 border-y border-ink/10 bg-paper py-20 text-ink md:py-24">
       <div class="container-wide">
-        <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><p class="eyebrow mb-4 text-orange">Configura tu cotización · 01</p><h2 class="font-display text-5xl font-bold uppercase tracking-tight md:text-6xl">Partamos por las medidas.</h2></div><p class="max-w-md text-sm leading-6 text-white/55">Arma una referencia para tu proyecto. El taller confirma materiales, medidas e instalación antes de cotizar.</p></div>
-        <div class="grid overflow-hidden border border-white/10 bg-paper text-ink lg:grid-cols-[1.08fr_.92fr]">
-          <div class="bg-[#dfded5] p-6 sm:p-10">
-            <div class="mb-6 flex items-center justify-between"><span class="eyebrow text-moss">Vista previa</span><span class="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-ink/55">Modelo referencial</span></div>
-            <div class="relative flex min-h-[300px] items-center justify-center overflow-hidden border border-ink/15 bg-[#d4d3ca] sm:min-h-[360px]">
-              <div class="technical-grid absolute inset-0 opacity-20" style="filter: invert(1)"></div>
+        <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><p class="eyebrow mb-4 text-moss">Cotizador a medida · 01</p><h2 class="font-display text-5xl font-semibold tracking-tight md:text-6xl">Partamos por las medidas.</h2></div><p class="max-w-md text-sm leading-6 text-ink/60">Arma una referencia para tu proyecto. Revisaremos contigo materiales, medidas e instalación antes de cotizar.</p></div>
+        <div class="grid overflow-hidden border border-ink/10 bg-white lg:grid-cols-[1.08fr_.92fr]">
+          <div class="bg-sand/55 p-6 sm:p-10">
+            <div class="mb-6 flex items-center justify-between"><span class="eyebrow text-moss">Vista previa</span><span class="border border-ink/10 bg-paper px-3 py-1.5 text-xs font-semibold text-ink/60">Modelo referencial</span></div>
+            <div class="relative flex min-h-[300px] items-center justify-center overflow-hidden border border-ink/10 bg-paper sm:min-h-[360px]">
+              <div class="technical-paper-grid absolute inset-0"></div>
               <svg class="relative z-10 h-auto w-[88%] max-w-[490px] drop-shadow-xl" viewBox="0 0 480 330" role="img" aria-label="Vista previa dinámica de la ventana configurada">
                 <defs>
                   <linearGradient id="preview-glass" x1="0" y1="0" x2="1" y2="1"><stop data-glass-tone offset="0" stop-color="#e1f0ec"/><stop offset="1" stop-color="#9dbbb4"/></linearGradient>
@@ -93,32 +93,32 @@ import { business } from '../config';
                   </g>
                 </g>
               </svg>
-              <span class="absolute bottom-4 left-4 border-l-2 border-orange bg-white/95 px-3 py-2 text-xs font-bold shadow-sm"><span data-type-label>Corredera</span> · <span data-width-label>150 cm</span> × <span data-height-label>120 cm</span> · <span data-preview-glass>Termopanel</span></span>
+              <span class="absolute bottom-4 left-4 border-l-2 border-orange bg-paper/95 px-3 py-2 text-xs font-bold text-ink"><span data-type-label>Corredera</span> · <span data-width-label>150 cm</span> × <span data-height-label>120 cm</span> · <span data-preview-glass>Termopanel</span></span>
             </div>
-            <div class="mt-5 flex items-center justify-between text-sm"><span class="font-semibold">Vista aproximada del modelo</span><span class="text-ink/50">La apariencia final puede variar</span></div>
+            <div class="mt-5 flex items-center justify-between gap-3 text-sm"><span class="font-semibold">Vista aproximada del modelo</span><span class="text-right text-ink/50">La apariencia final puede variar</span></div>
           </div>
-          <div class="p-6 sm:p-10">
+          <div class="border-t border-ink/10 p-6 sm:p-10 lg:border-l lg:border-t-0">
             <form data-quote-form class="space-y-6">
-              <div><p class="eyebrow text-moss">Ficha inicial / 01</p><h3 class="mt-2 font-display text-3xl font-bold uppercase">Configura tu ventana</h3><p class="mt-1 text-sm text-ink/55">Cuéntanos lo esencial para preparar la cotización.</p></div>
+              <div><p class="eyebrow text-moss">Ficha inicial / 01</p><h3 class="mt-2 font-display text-3xl font-semibold">Configura tu ventana</h3><p class="mt-1 text-sm text-ink/55">Cuéntanos lo esencial para preparar la cotización.</p></div>
               <div class="space-y-5">
                 <label for="window-width" class="block text-sm font-semibold">Ancho <span class="font-normal text-ink/45">(cm)</span><output data-width-value for="window-width" class="float-right rounded-sm bg-sage px-2 py-1 text-xs font-bold text-moss">150 cm</output><input id="window-width" name="width" type="range" min="60" max="300" step="5" value="150" required class="range-control mt-3 block" aria-label="Ancho de la ventana en centímetros" /></label>
                 <label for="window-height" class="block text-sm font-semibold">Alto <span class="font-normal text-ink/45">(cm)</span><output data-height-value for="window-height" class="float-right rounded-sm bg-sage px-2 py-1 text-xs font-bold text-moss">120 cm</output><input id="window-height" name="height" type="range" min="60" max="240" step="5" value="120" required class="range-control mt-3 block" aria-label="Alto de la ventana en centímetros" /></label>
               </div>
               <div class="grid gap-4 sm:grid-cols-2">
-                <label class="text-sm font-semibold">Tipo de ventana<select id="window-type" name="windowType" class="mt-2 w-full rounded-xl border border-ink/15 bg-paper px-4 py-3 outline-none focus:border-moss"><option>Corredera</option><option>Abatible</option><option>Proyectante</option><option>Fija</option><option>Puerta ventana</option></select></label>
-                <label class="text-sm font-semibold">Color del marco<select id="window-finish" name="finish" class="mt-2 w-full rounded-xl border border-ink/15 bg-paper px-4 py-3 outline-none focus:border-moss"><option>Blanco</option><option>Grafito</option><option>Negro</option></select></label>
+                <label class="text-sm font-semibold">Tipo de ventana<select id="window-type" name="windowType" class="quote-field mt-2 w-full border border-ink/15 bg-paper px-4 py-3"><option>Corredera</option><option>Abatible</option><option>Proyectante</option><option>Fija</option><option>Puerta ventana</option></select></label>
+                <label class="text-sm font-semibold">Color del marco<select id="window-finish" name="finish" class="quote-field mt-2 w-full border border-ink/15 bg-paper px-4 py-3"><option>Blanco</option><option>Grafito</option><option>Negro</option></select></label>
               </div>
-              <label class="block text-sm font-semibold">Tipo de vidrio<select id="window-glass" name="glass" class="mt-2 w-full rounded-xl border border-ink/15 bg-paper px-4 py-3 outline-none focus:border-moss"><option>Termopanel</option><option>Vidrio simple</option><option>Vidrio laminado</option></select></label>
+              <label class="block text-sm font-semibold">Tipo de vidrio<select id="window-glass" name="glass" class="quote-field mt-2 w-full border border-ink/15 bg-paper px-4 py-3"><option>Termopanel</option><option>Vidrio simple</option><option>Vidrio laminado</option></select></label>
               <div class="border-l-4 border-orange bg-sand p-4"><span class="eyebrow text-moss">Resumen del requerimiento</span><p data-config-summary class="mt-1 text-sm font-semibold">Corredera · 150 × 120 cm · Blanco · Termopanel</p></div>
               <div class="grid gap-4 sm:grid-cols-2">
-                <label class="text-sm font-semibold">Tu nombre<input name="name" autocomplete="name" required placeholder="Nombre y apellido" class="mt-2 w-full rounded-xl border border-ink/15 px-4 py-3 outline-none focus:border-moss" /></label>
-                <label class="text-sm font-semibold">Teléfono<input name="phone" type="tel" autocomplete="tel" required placeholder="+56 9 1234 5678" class="mt-2 w-full rounded-xl border border-ink/15 px-4 py-3 outline-none focus:border-moss" /></label>
+                <label class="text-sm font-semibold">Tu nombre<input name="name" autocomplete="name" required placeholder="Nombre y apellido" class="quote-field mt-2 w-full border border-ink/15 bg-paper px-4 py-3" /></label>
+                <label class="text-sm font-semibold">Teléfono<input name="phone" type="tel" autocomplete="tel" required placeholder="+56 9 1234 5678" class="quote-field mt-2 w-full border border-ink/15 bg-paper px-4 py-3" /></label>
               </div>
               <div class="grid gap-4 sm:grid-cols-2">
-                <label class="text-sm font-semibold">Comuna<input name="commune" autocomplete="address-level2" required placeholder="¿Dónde instalamos?" class="mt-2 w-full rounded-xl border border-ink/15 px-4 py-3 outline-none focus:border-moss" /></label>
-                <label class="text-sm font-semibold">Comentario <span class="font-normal text-ink/45">(opcional)</span><input name="notes" placeholder="Cantidad, instalación…" class="mt-2 w-full rounded-xl border border-ink/15 px-4 py-3 outline-none focus:border-moss" /></label>
+                <label class="text-sm font-semibold">Comuna<input name="commune" autocomplete="address-level2" required placeholder="¿Dónde instalamos?" class="quote-field mt-2 w-full border border-ink/15 bg-paper px-4 py-3" /></label>
+                <label class="text-sm font-semibold">Comentario <span class="font-normal text-ink/45">(opcional)</span><input name="notes" placeholder="Cantidad, instalación…" class="quote-field mt-2 w-full border border-ink/15 bg-paper px-4 py-3" /></label>
               </div>
-              <button type="submit" class="w-full rounded-sm bg-ink px-6 py-4 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-moss">Enviar ficha al taller por WhatsApp <span class="ml-2 text-orange">↗</span></button>
+              <button type="submit" class="w-full rounded-sm bg-moss px-6 py-4 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-ink">Enviar ficha al taller por WhatsApp <span class="ml-2 text-sage">↗</span></button>
               <p data-form-status role="status" aria-live="polite" class="text-center text-xs leading-5 text-ink/50">La cotización final se confirma al revisar medidas, materiales e instalación.</p>
             </form>
           </div>
