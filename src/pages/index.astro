@@ -11,8 +11,8 @@ import { business } from '../config';
       <nav class="hidden items-center gap-8 text-sm font-semibold text-ink/70 md:flex" aria-label="Navegación principal">
         <a class="hover:text-orange" href="#productos">Ventanas</a><a class="hover:text-orange" href="#servicios">Servicios</a><a class="hover:text-orange" href="#proyectos">Proyectos</a><a class="hover:text-orange" href="#preguntas">FAQ</a>
       </nav>
-      <a href="#configurador" class="hidden rounded-sm bg-moss px-5 py-3 text-sm font-bold text-white transition hover:bg-ink sm:inline-flex">Cotizar proyecto <span class="ml-2">↗</span></a>
-      <button data-menu-button aria-expanded="false" aria-label="Abrir menú" class="grid size-10 place-items-center rounded-sm border border-ink/20 text-xl md:hidden">☰</button>
+      <a href="#configurador" class="hidden items-center rounded-full border border-moss/20 bg-moss px-2 py-2 pl-5 text-sm font-bold text-white transition hover:bg-ink sm:inline-flex">Cotizar proyecto <span class="ml-4 grid size-9 place-items-center rounded-full bg-sage text-lg text-ink">↗</span></a>
+      <button data-menu-button aria-expanded="false" aria-label="Abrir menú" class="grid size-10 place-items-center rounded-full border border-ink/20 text-xl md:hidden">☰</button>
     </div>
     <nav data-mobile-menu class="container-wide hidden border-t border-ink/10 py-4 text-ink md:hidden" aria-label="Navegación móvil">
       <div class="flex flex-col gap-4 text-sm font-semibold"><a href="#productos">Ventanas</a><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#preguntas">Preguntas frecuentes</a><a class="text-moss" href="#configurador">Configurar y cotizar ↗</a></div>
@@ -24,23 +24,23 @@ import { business } from '../config';
       <div class="hero-blueprint absolute inset-0"></div>
       <div class="container-wide relative grid min-h-[690px] items-center gap-10 py-14 lg:grid-cols-[.88fr_1.12fr] lg:py-20">
         <div class="hero-copy relative z-10 max-w-[600px]">
-          <p class="eyebrow mb-6 flex items-center gap-3 text-sage"><span class="h-[2px] w-8 bg-orange"></span> Fabricación · Venta · Instalación</p>
-          <h1 class="font-display text-[clamp(4.5rem,8vw,7.5rem)] font-semibold leading-[.86] tracking-[-.025em]">Hechas para<br /><span class="hero-accent text-orange">encajar.</span></h1>
+          <p class="eyebrow mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sage"><span class="size-2 rounded-full bg-orange"></span> Fabricación · Venta · Instalación</p>
+          <h1 class="font-display text-[clamp(4.6rem,8vw,7.5rem)] font-extrabold uppercase leading-[.8] tracking-[-.035em]">Hechas para<br /><span class="hero-accent mt-2 inline-flex rounded-full bg-sage px-5 py-2 text-ink">encajar.</span></h1>
           <p class="mt-8 max-w-[430px] text-base leading-7 text-white/75 sm:text-lg">Fabricamos ventanas a medida para tu obra o remodelación. Configura tu idea y cotiza directo con el taller.</p>
           <div class="mt-8 flex flex-wrap items-center gap-4">
-            <a href="#configurador" class="button-primary group inline-flex items-center rounded-sm bg-orange px-6 py-4 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-white hover:text-ink">Configurar y cotizar <span class="button-arrow ml-3">↗</span></a>
-            <a href="#productos" class="inline-flex items-center gap-2 px-2 py-3 text-sm font-semibold text-white/80 transition hover:text-white">Conocer ventanas <span class="button-arrow text-orange">↓</span></a>
+            <a href="#configurador" class="button-primary group inline-flex items-center rounded-full bg-sage px-6 py-4 text-sm font-bold uppercase tracking-wide text-ink transition hover:bg-white">Configurar y cotizar <span class="button-arrow ml-3">↗</span></a>
+            <a href="#productos" class="inline-flex items-center gap-2 rounded-full border border-white/25 px-5 py-3 text-sm font-semibold text-white/85 transition hover:border-sage hover:text-sage">Conocer ventanas <span class="button-arrow text-sage">↓</span></a>
           </div>
           <div class="mt-12 grid max-w-[510px] grid-cols-3 border-t border-white/20 pt-5 text-xs font-semibold uppercase tracking-wider text-white/65">
             <span><b class="mr-2 font-display text-2xl text-orange">01</b><br class="sm:hidden" />Diseñamos</span><span><b class="mr-2 font-display text-2xl text-orange">02</b><br class="sm:hidden" />Fabricamos</span><span><b class="mr-2 font-display text-2xl text-orange">03</b><br class="sm:hidden" />Instalamos</span>
           </div>
         </div>
         <div class="hero-visual relative mx-auto w-full max-w-[700px] py-5">
-          <div class="hero-photo-frame relative p-2 sm:p-3">
+          <div class="hero-photo-frame relative p-1.5 sm:p-2">
             <div class="hero-photo relative min-h-[370px] overflow-hidden sm:min-h-[510px]">
               <img src="https://images.pexels.com/photos/13597045/pexels-photo-13597045.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Ventanal de gran formato integrado en un espacio residencial" fetchpriority="high" class="hero-image absolute inset-0 h-full w-full object-cover" />
               <div class="hero-image-shade absolute inset-0"></div>
-              <div class="absolute left-4 top-4 flex items-center gap-2 bg-paper px-3 py-2 text-[10px] font-bold uppercase tracking-[.14em] text-ink sm:left-6 sm:top-6"><span class="size-2 rounded-full bg-moss"></span> Imagen referencial · Ventanas a medida</div>
+              <div class="absolute left-4 top-4 flex items-center gap-2 rounded-full bg-paper px-4 py-2 text-[10px] font-bold uppercase tracking-[.14em] text-ink sm:left-6 sm:top-6"><span class="size-2 rounded-full bg-moss"></span> Imagen referencial · Ventanas a medida</div>
               <div class="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4 text-white sm:bottom-8 sm:left-8 sm:right-8">
                 <div><span class="eyebrow text-sage">EuroTermo · Soluciones a medida</span><p class="mt-2 max-w-sm font-display text-3xl font-semibold leading-tight sm:text-4xl">Más luz. Más confort. A tu medida.</p></div>
                 <a href="#configurador" aria-label="Configurar una ventana" class="grid size-12 shrink-0 place-items-center rounded-full bg-orange text-xl text-white transition hover:scale-110 hover:bg-white hover:text-ink">↘</a>
@@ -51,6 +51,14 @@ import { business } from '../config';
         </div>
       </div>
     </section>
+
+    <div class="overflow-hidden border-b border-moss/10 bg-sage py-4 text-moss" aria-label="Ventanas a medida, fabricación local e instalación profesional">
+      <p class="sr-only">Ventanas a medida · Fabricación local · Instalación profesional · Termopanel</p>
+      <div class="marquee-track flex w-max items-center gap-7 whitespace-nowrap font-display text-lg font-bold uppercase tracking-[.12em] sm:text-xl" aria-hidden="true">
+        <span>Ventanas a medida</span><span class="text-orange">✳</span><span>Fabricación local</span><span class="text-orange">✳</span><span>Instalación profesional</span><span class="text-orange">✳</span><span>Termopanel</span><span class="text-orange">✳</span>
+        <span>Ventanas a medida</span><span class="text-orange">✳</span><span>Fabricación local</span><span class="text-orange">✳</span><span>Instalación profesional</span><span class="text-orange">✳</span><span>Termopanel</span><span class="text-orange">✳</span>
+      </div>
+    </div>
 
     <section id="configurador" class="scroll-mt-10 border-y border-moss/10 bg-[#e7efe7] py-20 text-ink md:py-24">
       <div class="container-wide">

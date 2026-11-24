@@ -20,11 +20,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .container-wide { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
 .eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
 .hero-blueprint { background: radial-gradient(ellipse at 78% 45%, rgb(8 97 59 / .38), transparent 42%), linear-gradient(115deg, transparent 45%, rgb(255 255 255 / .025) 45.1%, transparent 45.3%); }
-.hero-photo-frame { background: linear-gradient(135deg, var(--color-orange), rgb(145 70 33 / .15) 45%, rgb(255 255 255 / .18)); box-shadow: 0 28px 80px rgb(0 0 0 / .28); animation: hero-frame-in .9s cubic-bezier(.2,.7,.2,1) both; }
+.hero-photo-frame { border-radius: 18px; background: linear-gradient(135deg, var(--color-orange), rgb(145 70 33 / .15) 45%, rgb(255 255 255 / .18)); box-shadow: 0 28px 80px rgb(0 0 0 / .28); animation: hero-frame-in .9s cubic-bezier(.2,.7,.2,1) both; }
+.hero-photo { border-radius: 12px; }
 .hero-image { animation: hero-image-drift 20s ease-in-out 1s infinite alternate; }
 .hero-image-shade { background: linear-gradient(180deg, rgb(19 25 21 / .08) 15%, transparent 42%, rgb(19 25 21 / .76) 100%); }
 .hero-copy { animation: hero-copy-in .8s cubic-bezier(.2,.7,.2,1) both; }
-.hero-accent { text-shadow: 0 8px 36px rgb(145 70 33 / .22); }
+.hero-accent { box-shadow: 0 10px 38px rgb(204 229 207 / .12); }
+.marquee-track { animation: marquee-scroll 32s linear infinite; }
+.marquee-track:hover { animation-play-state: paused; }
 .button-arrow { display: inline-block; transition: transform .22s ease; }
 a:hover .button-arrow { transform: translate(3px, -3px); }
 .button-primary { box-shadow: 0 8px 24px rgb(145 70 33 / .18); }
@@ -51,4 +54,5 @@ summary::-webkit-details-marker { display: none; }
 @keyframes hero-copy-in { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes hero-frame-in { from { opacity: 0; transform: translateY(26px) scale(.985); } to { opacity: 1; transform: translateY(0) scale(1); } }
 @keyframes hero-image-drift { from { transform: scale(1); } to { transform: scale(1.075); } }
-@media (prefers-reduced-motion: reduce) { .hero-copy, .hero-photo-frame, .hero-image { animation: none !important; } }
+@keyframes marquee-scroll { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .hero-copy, .hero-photo-frame, .hero-image, .marquee-track { animation: none !important; } }
