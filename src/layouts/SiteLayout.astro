@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+import { business } from '../config';
+const { title = 'EuroTermo Ventanas | Cotiza a medida', description = 'Configura tus ventanas EuroTermo y solicita una cotización para tu proyecto.' } = Astro.props;
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f6f4ee" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <slot />
+    <script>
+      import '../scripts/site.ts';
+      import '../scripts/configurator.ts';
+    </script>
+    <footer class="border-t border-ink/10 py-8">
+      <div class="container-wide flex flex-col justify-between gap-3 text-sm text-ink/55 sm:flex-row">
+        <span>© {new Date().getFullYear()} {business.name}. Fabricación e instalación de ventanas.</span>
+        <a href="#inicio" class="font-semibold text-ink hover:text-moss">Volver arriba ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
