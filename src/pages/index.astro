@@ -20,40 +20,41 @@ import { business } from '../config';
   </header>
 
   <main>
-    <section class="relative overflow-hidden bg-ink text-white">
-      <div class="technical-grid absolute inset-0 opacity-70"></div>
-      <div class="container-wide relative grid min-h-[650px] items-center gap-8 py-14 lg:grid-cols-[.88fr_1.12fr] lg:py-20">
-        <div class="relative z-10 max-w-[570px]">
-          <p class="eyebrow mb-6 flex items-center gap-3 text-orange"><span class="h-[2px] w-8 bg-orange"></span> Fabricación · Venta · Instalación</p>
-          <h1 class="font-display text-[clamp(4.5rem,8vw,7.5rem)] font-semibold leading-[.86] tracking-[-.025em]">Hechas para<br /><span class="text-orange">encajar.</span></h1>
-          <p class="mt-8 max-w-[430px] text-base leading-7 text-white/65 sm:text-lg">Fabricamos ventanas a medida para tu obra o remodelación. Define una configuración inicial y cotiza directo con el taller.</p>
+    <section class="hero-section relative isolate overflow-hidden bg-ink text-white">
+      <div class="hero-blueprint absolute inset-0"></div>
+      <div class="container-wide relative grid min-h-[690px] items-center gap-10 py-14 lg:grid-cols-[.88fr_1.12fr] lg:py-20">
+        <div class="hero-copy relative z-10 max-w-[600px]">
+          <p class="eyebrow mb-6 flex items-center gap-3 text-sage"><span class="h-[2px] w-8 bg-orange"></span> Fabricación · Venta · Instalación</p>
+          <h1 class="font-display text-[clamp(4.5rem,8vw,7.5rem)] font-semibold leading-[.86] tracking-[-.025em]">Hechas para<br /><span class="hero-accent text-orange">encajar.</span></h1>
+          <p class="mt-8 max-w-[430px] text-base leading-7 text-white/75 sm:text-lg">Fabricamos ventanas a medida para tu obra o remodelación. Configura tu idea y cotiza directo con el taller.</p>
           <div class="mt-8 flex flex-wrap items-center gap-4">
-            <a href="#configurador" class="rounded-sm bg-orange px-6 py-4 text-sm font-bold uppercase tracking-wide text-ink transition hover:bg-white">Configurar y cotizar <span class="ml-3">↘</span></a>
-            <span class="text-xs font-semibold uppercase tracking-wider text-white/40">A medida · Para tu proyecto</span>
+            <a href="#configurador" class="button-primary group inline-flex items-center rounded-sm bg-orange px-6 py-4 text-sm font-bold uppercase tracking-wide text-ink transition hover:bg-white">Configurar y cotizar <span class="button-arrow ml-3">↗</span></a>
+            <a href="#productos" class="inline-flex items-center gap-2 px-2 py-3 text-sm font-semibold text-white/80 transition hover:text-white">Conocer ventanas <span class="button-arrow text-orange">↓</span></a>
           </div>
-          <div class="mt-12 flex gap-7 border-t border-white/15 pt-5 text-xs font-semibold uppercase tracking-wider text-white/55"><span><b class="mr-2 font-display text-2xl text-orange">01</b> Medimos</span><span><b class="mr-2 font-display text-2xl text-orange">02</b> Fabricamos</span><span><b class="mr-2 font-display text-2xl text-orange">03</b> Instalamos</span></div>
+          <div class="mt-12 grid max-w-[510px] grid-cols-3 border-t border-white/20 pt-5 text-xs font-semibold uppercase tracking-wider text-white/65">
+            <span><b class="mr-2 font-display text-2xl text-orange">01</b><br class="sm:hidden" />Diseñamos</span><span><b class="mr-2 font-display text-2xl text-orange">02</b><br class="sm:hidden" />Fabricamos</span><span><b class="mr-2 font-display text-2xl text-orange">03</b><br class="sm:hidden" />Instalamos</span>
+          </div>
         </div>
-        <div class="relative mx-auto w-full max-w-[680px] py-5">
-          <div class="absolute left-0 top-0 z-10 flex items-center gap-2 bg-orange px-3 py-2 text-[10px] font-bold uppercase tracking-[.18em] text-ink"><span class="size-1.5 rounded-full bg-ink"></span> Detalle de fabricación</div>
-          <div class="relative overflow-hidden border border-white/15 bg-[#2a302c] p-2 sm:p-3">
-            <div class="relative min-h-[360px] overflow-hidden sm:min-h-[440px]">
-              <img src="https://images.pexels.com/photos/13597045/pexels-photo-13597045.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Ventanal de gran formato integrado en un espacio residencial" fetchpriority="high" class="absolute inset-0 h-full w-full object-cover" />
-              <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/10 to-ink/5"></div>
-              <div class="absolute left-5 top-5 border border-white/45 bg-ink/35 px-3 py-2 text-[10px] font-semibold uppercase tracking-[.18em] text-white backdrop-blur-sm">Imagen referencial · Ventanas a medida</div>
-              <div class="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4 text-white sm:bottom-7 sm:left-7 sm:right-7">
-                <div><span class="eyebrow text-sage">Fabricación e instalación</span><p class="mt-2 max-w-sm font-display text-3xl font-semibold leading-tight sm:text-4xl">Luz natural, con un ajuste preciso.</p></div>
-                <span class="hidden border-l border-white/50 pl-4 text-xs uppercase tracking-wider text-white/80 sm:block">Diseñada para<br />tu espacio</span>
+        <div class="hero-visual relative mx-auto w-full max-w-[700px] py-5">
+          <div class="hero-photo-frame relative p-2 sm:p-3">
+            <div class="hero-photo relative min-h-[370px] overflow-hidden sm:min-h-[510px]">
+              <img src="https://images.pexels.com/photos/13597045/pexels-photo-13597045.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Ventanal de gran formato integrado en un espacio residencial" fetchpriority="high" class="hero-image absolute inset-0 h-full w-full object-cover" />
+              <div class="hero-image-shade absolute inset-0"></div>
+              <div class="absolute left-4 top-4 flex items-center gap-2 bg-paper px-3 py-2 text-[10px] font-bold uppercase tracking-[.14em] text-ink sm:left-6 sm:top-6"><span class="size-2 rounded-full bg-moss"></span> Imagen referencial · Ventanas a medida</div>
+              <div class="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4 text-white sm:bottom-8 sm:left-8 sm:right-8">
+                <div><span class="eyebrow text-sage">EuroTermo · Soluciones a medida</span><p class="mt-2 max-w-sm font-display text-3xl font-semibold leading-tight sm:text-4xl">Más luz. Más confort. A tu medida.</p></div>
+                <a href="#configurador" aria-label="Configurar una ventana" class="grid size-12 shrink-0 place-items-center rounded-full bg-orange text-xl text-ink transition hover:scale-110 hover:bg-white">↘</a>
               </div>
             </div>
           </div>
-          <div class="mt-3 flex items-center justify-between text-[10px] font-semibold uppercase tracking-[.2em] text-white/40"><span>Fabricación local</span><span>Diseño · Producción · Montaje</span></div>
+          <div class="hero-caption mt-3 flex items-center justify-between text-[10px] font-semibold uppercase tracking-[.2em] text-white/55"><span>Fabricación a medida</span><span>Diseño · Producción · Montaje</span></div>
         </div>
       </div>
     </section>
 
     <section id="configurador" class="scroll-mt-10 border-y border-ink/10 bg-paper py-20 text-ink md:py-24">
       <div class="container-wide">
-        <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><p class="eyebrow mb-4 text-moss">Cotizador a medida · 01</p><h2 class="font-display text-5xl font-semibold tracking-tight md:text-6xl">Partamos por las medidas.</h2></div><p class="max-w-md text-sm leading-6 text-ink/60">Arma una referencia para tu proyecto. Revisaremos contigo materiales, medidas e instalación antes de cotizar.</p></div>
+        <div class="section-heading mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end" data-reveal><div><p class="eyebrow mb-4 text-moss">Cotizador a medida · 01</p><h2 class="font-display text-5xl font-semibold tracking-tight md:text-6xl">Partamos por las medidas.</h2></div><p class="max-w-md text-sm leading-6 text-ink/60">Arma una referencia para tu proyecto. Revisaremos contigo materiales, medidas e instalación antes de cotizar.</p></div>
         <div class="overflow-hidden border-t-4 border-orange bg-[#eaf1ea] lg:grid lg:grid-cols-[1.08fr_.92fr]">
           <div class="p-6 sm:p-10">
             <div class="mb-6 flex items-center justify-between"><span class="eyebrow text-moss">Vista previa</span><span class="border border-ink/10 bg-paper px-3 py-1.5 text-xs font-semibold text-ink/60">Modelo referencial</span></div>
@@ -65,7 +66,7 @@ import { business } from '../config';
                   <pattern id="glass-lines" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M0 5 5 0" stroke="#fff" stroke-opacity=".5" stroke-width="1"/></pattern>
                 </defs>
                 <path d="M28 299h424" stroke="#53675a" stroke-width="3" stroke-linecap="round"/>
-                <g data-window-shape transform="translate(240 165) scale(0.82 0.82) translate(-240 -165)">
+                <g class="window-shape" data-window-shape transform="translate(240 165) scale(0.82 0.82) translate(-240 -165)">
                   <rect data-frame data-frame-fill x="65" y="48" width="350" height="234" fill="#fff" stroke="#914621" stroke-width="16" />
                   <rect data-glass-pane x="78" y="61" width="324" height="208" fill="url(#preview-glass)" />
                   <path data-glass-reflection d="M90 72h128l-55 178H90z" fill="#fff" opacity=".24" />
@@ -128,8 +129,8 @@ import { business } from '../config';
 
     <section id="productos" class="scroll-mt-10 bg-sage/20 py-20 md:py-24">
       <div class="container-wide">
-      <div class="flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><p class="eyebrow mb-4 text-moss">Catálogo · 02</p><h2 class="font-display text-5xl font-semibold tracking-tight md:text-6xl">Elige el sistema.</h2></div><p class="max-w-sm text-sm leading-6 text-ink/65">Distintas aperturas y soluciones de vidrio para obra nueva, ampliación y recambio.</p></div>
-      <div class="mt-10 grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="section-heading flex flex-col justify-between gap-5 md:flex-row md:items-end" data-reveal><div><p class="eyebrow mb-4 text-moss">Catálogo · 02</p><h2 class="font-display text-5xl font-semibold tracking-tight md:text-6xl">Elige el sistema.</h2></div><p class="max-w-sm text-sm leading-6 text-ink/65">Distintas aperturas y soluciones de vidrio para obra nueva, ampliación y recambio.</p></div>
+      <div class="mt-10 grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-4" data-reveal-group>
         <article class="group border-t-2 border-orange pt-3"><div class="relative aspect-[4/3] overflow-hidden bg-sand"><span class="absolute left-3 top-3 z-10 bg-moss px-2.5 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-white">01 / Corredera</span><img src="https://images.pexels.com/photos/5691476/pexels-photo-5691476.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Ventana de marco oscuro en un espacio interior" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]" /></div><h3 class="mt-4 font-display text-2xl font-semibold">Correderas</h3><p class="mt-1 max-w-[28ch] text-sm leading-6 text-ink/70">Deslizamiento lateral para aprovechar el espacio disponible.</p></article>
         <article class="group border-t-2 border-orange pt-3"><div class="relative aspect-[4/3] overflow-hidden bg-sand"><span class="absolute left-3 top-3 z-10 bg-moss px-2.5 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-white">02 / Abatible</span><img src="https://images.pexels.com/photos/8987429/pexels-photo-8987429.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Ventana abatible en una vivienda contemporánea" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]" /></div><h3 class="mt-4 font-display text-2xl font-semibold">Abatibles</h3><p class="mt-1 max-w-[28ch] text-sm leading-6 text-ink/70">Apertura amplia para ventilar y facilitar la limpieza.</p></article>
         <article class="group border-t-2 border-orange pt-3"><div class="relative aspect-[4/3] overflow-hidden bg-sand"><span class="absolute left-3 top-3 z-10 bg-moss px-2.5 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-white">03 / Proyectante</span><img src="https://images.pexels.com/photos/18426836/pexels-photo-18426836.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Paños de vidrio y marcos en una arquitectura moderna" loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]" /></div><h3 class="mt-4 font-display text-2xl font-semibold">Proyectantes</h3><p class="mt-1 max-w-[28ch] text-sm leading-6 text-ink/70">Ventilación controlada para distintos recintos.</p></article>
@@ -142,8 +143,8 @@ import { business } from '../config';
 
     <section id="servicios" class="scroll-mt-10 border-y border-moss/15 bg-sage/35 py-20 md:py-24">
       <div class="container-wide grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
-        <div><p class="eyebrow mb-4 text-moss">El trabajo completo / 03</p><h2 class="font-display text-5xl font-semibold tracking-tight md:text-6xl">Del taller<br />a tu obra.</h2><p class="mt-5 max-w-md leading-7 text-ink/65">Un solo equipo para definir la solución, fabricar a medida y dejarla instalada.</p><a href="#configurador" class="mt-7 inline-flex rounded-sm bg-moss px-5 py-3 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-ink">Pedir cotización ↗</a></div>
-        <div class="divide-y divide-moss/20 border-y border-moss/20">
+        <div data-reveal><p class="eyebrow mb-4 text-moss">El trabajo completo / 03</p><h2 class="font-display text-5xl font-semibold tracking-tight md:text-6xl">Del taller<br />a tu obra.</h2><p class="mt-5 max-w-md leading-7 text-ink/65">Un solo equipo para definir la solución, fabricar a medida y dejarla instalada.</p><a href="#configurador" class="mt-7 inline-flex rounded-sm bg-moss px-5 py-3 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-ink">Pedir cotización ↗</a></div>
+        <div class="divide-y divide-moss/20 border-y border-moss/20" data-reveal-group>
           <article class="grid gap-2 py-5 sm:grid-cols-[100px_1fr]"><span class="eyebrow text-orange">01 / Asesoría</span><div><h3 class="font-display text-2xl font-bold uppercase">Definición del proyecto</h3><p class="mt-1 text-sm leading-6 text-ink/70">Revisamos medidas, tipo de apertura y terminación que necesitas.</p></div></article>
           <article class="grid gap-2 py-5 sm:grid-cols-[100px_1fr]"><span class="eyebrow text-orange">02 / Fabricación</span><div><h3 class="font-display text-2xl font-bold uppercase">Producción a medida</h3><p class="mt-1 text-sm leading-6 text-ink/70">Fabricamos ventanas según las especificaciones acordadas.</p></div></article>
           <article class="grid gap-2 py-5 sm:grid-cols-[100px_1fr]"><span class="eyebrow text-orange">03 / Instalación</span><div><h3 class="font-display text-2xl font-bold uppercase">Montaje y terminación</h3><p class="mt-1 text-sm leading-6 text-ink/70">Coordinamos la instalación en obra o el recambio de ventanas existentes.</p></div></article>
@@ -152,8 +153,8 @@ import { business } from '../config';
     </section>
 
     <section id="proceso" class="container-wide scroll-mt-10 py-20 md:py-24">
-      <div class="mx-auto max-w-3xl text-center"><p class="eyebrow mb-4 text-moss">Simple y directo</p><h2 class="font-display text-4xl font-semibold tracking-tight md:text-5xl">Cotiza en tres pasos.</h2><p class="mx-auto mt-4 max-w-xl text-ink/55">Partimos con tu configuración y confirmamos cada detalle contigo.</p></div>
-      <div class="mt-12 grid gap-8 md:grid-cols-3">
+      <div class="mx-auto max-w-3xl text-center" data-reveal><p class="eyebrow mb-4 text-moss">Simple y directo</p><h2 class="font-display text-4xl font-semibold tracking-tight md:text-5xl">Cotiza en tres pasos.</h2><p class="mx-auto mt-4 max-w-xl text-ink/55">Partimos con tu configuración y confirmamos cada detalle contigo.</p></div>
+      <div class="mt-12 grid gap-8 md:grid-cols-3" data-reveal-group>
         <div class="border-t-2 border-moss pt-5"><span class="font-display text-4xl font-semibold text-moss/40">01</span><h3 class="mt-3 font-display text-xl font-bold">Configura</h3><p class="mt-2 text-sm leading-6 text-ink/55">Elige medidas aproximadas, apertura, color y vidrio.</p></div>
         <div class="border-t-2 border-ink/15 pt-5"><span class="font-display text-4xl font-semibold text-ink/25">02</span><h3 class="mt-3 font-display text-xl font-bold">Envíanos tu solicitud</h3><p class="mt-2 text-sm leading-6 text-ink/55">Déjanos tus datos y la comuna donde necesitas el servicio.</p></div>
         <div class="border-t-2 border-ink/15 pt-5"><span class="font-display text-4xl font-semibold text-ink/25">03</span><h3 class="mt-3 font-display text-xl font-bold">Revisamos contigo</h3><p class="mt-2 text-sm leading-6 text-ink/55">Te contactamos para validar medidas, alcance y cotización.</p></div>
@@ -162,11 +163,11 @@ import { business } from '../config';
 
     <section id="proyectos" class="scroll-mt-10 bg-ink py-20 text-white md:py-24">
       <div class="container-wide">
-        <div class="mb-9 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+        <div class="mb-9 flex flex-col justify-between gap-5 md:flex-row md:items-end" data-reveal>
           <div><p class="eyebrow mb-4 text-orange">Galería · 04</p><h2 class="font-display text-5xl font-semibold tracking-tight md:text-6xl">Ventanas en contexto.</h2></div>
           <p class="max-w-md text-sm leading-6 text-white/60">Ideas de espacios y terminaciones para imaginar tu próximo proyecto. Las fotografías son referenciales; esta galería se puede sustituir por obras reales de EuroTermo.</p>
         </div>
-        <div class="grid gap-4 md:grid-cols-3">
+        <div class="grid gap-4 md:grid-cols-3" data-reveal-group>
           <figure class="group relative min-h-[340px] overflow-hidden border border-white/15 md:col-span-2">
             <img src="https://images.pexels.com/photos/13597045/pexels-photo-13597045.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Espacio residencial iluminado por una ventana de gran formato" loading="lazy" class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]" />
             <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-ink/15"></div><span class="absolute left-4 top-4 bg-paper px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-ink">Imagen referencial</span>
@@ -193,7 +194,7 @@ import { business } from '../config';
     </section>
 
     <section id="preguntas" class="container-wide scroll-mt-10 py-20 md:py-24">
-      <div class="grid gap-10 lg:grid-cols-[.75fr_1.25fr]">
+      <div class="grid gap-10 lg:grid-cols-[.75fr_1.25fr]" data-reveal>
         <div><p class="eyebrow mb-4 text-moss">Resolvemos tus dudas · 05</p><h2 class="font-display text-5xl font-bold uppercase tracking-tight md:text-6xl">Preguntas<br />frecuentes.</h2><p class="mt-4 max-w-sm text-sm leading-6 text-ink/60">¿Tienes otra consulta? Envíanos tu configuración y la revisamos contigo.</p><a href="#configurador" class="mt-6 inline-flex rounded-sm bg-moss px-5 py-3 text-sm font-bold uppercase tracking-wide text-white hover:bg-ink">Cotizar mi proyecto ↗</a></div>
         <div class="divide-y divide-ink/15 border-y border-ink/15">
           <details class="group py-5" open><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold"><span>¿La cotización del sitio es el precio final?</span><span class="grid size-7 shrink-0 place-items-center border border-ink/20 text-lg text-moss transition group-open:rotate-45">+</span></summary><p class="mt-3 max-w-2xl pr-10 text-sm leading-6 text-ink/60">No. La configuración es una referencia inicial. El equipo debe confirmar medidas, tipo de ventana, vidrio, terminaciones e instalación antes de enviar el valor definitivo.</p></details>
@@ -205,7 +206,7 @@ import { business } from '../config';
       </div>
     </section>
 
-    <section class="container-wide pb-20 md:pb-24">
+    <section class="container-wide pb-20 md:pb-24" data-reveal>
       <div class="relative overflow-hidden border-l-[10px] border-orange bg-ink px-7 py-12 text-white sm:px-12 md:py-16"><div class="technical-grid absolute inset-0 opacity-60"></div><div class="relative flex flex-col items-start justify-between gap-8 md:flex-row md:items-center"><div><p class="eyebrow mb-4 text-orange">Cotización directa con el taller</p><h2 class="max-w-xl font-display text-4xl font-bold uppercase tracking-tight sm:text-5xl">Cuéntanos qué necesitas fabricar.</h2>{business.serviceArea && <p class="mt-3 text-sm text-white/65">Atendemos proyectos en {business.serviceArea}.</p>}</div><a href="#configurador" class="shrink-0 rounded-sm bg-orange px-6 py-4 text-sm font-bold uppercase tracking-wide text-ink transition hover:bg-white">Configurar ventana <span class="ml-2">↗</span></a></div></div>
     </section>
   </main>
